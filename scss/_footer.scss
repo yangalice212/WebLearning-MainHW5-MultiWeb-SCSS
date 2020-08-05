@@ -1,0 +1,133 @@
+.footer{
+    .setCenter{
+        background: $dark-green;
+        color: $light-green;
+    }
+    .footerSet{
+        width: 780px;
+        display: flex;
+        justify-content: space-between;
+        @include pad(){
+            padding: 0 30px;
+        }
+        @include mobile(){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    .footerEmail{
+        display: flex;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 1.5rem;    
+        }
+        @include mobile(){
+            justify-content: center;
+            width: auto;
+            margin-bottom: 30px;
+        }
+
+    }
+    .emailInput{
+        background-color: $light-green;
+        display: flex;
+        align-items: center;
+        width: 48%;
+        img{
+            width: 24px;
+            height: 24px;
+            margin: 16px 20px;
+        }
+        span{
+            margin: 0 10px 0 20px;
+            color: $dark-green;
+        }
+        input[type="text"]{
+            width: 100%;
+            display: block;
+            border: none;
+            padding: 16px;
+            background-color: $light-green;
+        }
+        button{
+            -ms-flex-negative: 0;
+            flex-shrink: 0;
+            display: block;
+            width: 64px;
+            height: 56px;
+            border: none;
+            cursor: pointer;
+            background: center center no-repeat $secondary url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+        }
+        @include mobile(){
+            width: 84%;
+        }
+    }
+    .footerbg{
+        background-color: $light-green;
+    }
+    .footerContact{
+        padding: 30px 122px;
+        max-width: 992px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            margin-bottom: 115.5px;
+            @include mobile(){
+                width: 171px;
+                height: 26px;
+                margin-bottom: 40px;
+            }
+        }
+        @include mobile(){
+            flex-direction: column;
+            padding-left: 30px;
+            padding-right: 0;
+        }
+    }
+    .contactContent{
+        margin-bottom: 30px;
+        li{
+            color: $dark-green;
+        }
+    }
+    .contactSocial{
+        display: flex;
+        img{
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+        }
+        @include mobile(){
+            margin-bottom: 23px;
+        }
+    }
+    .footerOther{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include mobile(){
+            flex-direction: row;
+            justify-content: start;
+        }
+        .slogun img{
+            margin-bottom: 40px;
+            width: 60px;
+            @include mobile(){
+                display: none;
+            }
+        }
+        .copyright{
+            color: $dark-green;
+        }
+    }
+    
+}

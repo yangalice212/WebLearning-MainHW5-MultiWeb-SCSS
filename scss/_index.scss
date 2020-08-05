@@ -1,0 +1,172 @@
+.banner{
+    margin-bottom: 60px;
+    @include pad(){
+        margin-bottom: 0;
+    }
+}
+.content{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    @include pad(){
+        flex-wrap: wrap;
+    }
+}
+
+.menu{
+    width: 32%;
+    margin-right: 20px;
+    @include pad(){
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    h2{
+        padding: 16px 64px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: $dark-green;
+        color: $light-green;
+    }
+    &-list {
+        @include pad(){
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            text-align: center;
+            border: 1px solid $light-green;
+            @include pad(){
+                width: 50%;
+            }
+            @include mobile(){
+                width: 100%;
+            }
+            a{
+                font-size: 1.5rem;
+                padding: 16px 64px;
+                color: $dark-green;
+                font-weight: bold;
+                &:hover{
+                    background-color: $light-green;
+                }
+            }
+        }
+    } 
+    
+}
+
+.desertList{
+    width: 68%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    @include pad(){
+        margin: 0 auto;
+    }
+}
+
+.items{
+    margin-bottom: 20px;
+    position: relative;
+    @include pad(){
+        width: 45%;
+        margin-right: 10px;
+    }
+    @include mobile(){
+        width: 100%;
+    }
+    img{
+        @include mobile(){
+            width: 100%;
+        }
+    }
+}
+
+.tag{
+    position: absolute;
+    left: 6.7%;
+    writing-mode: vertical-lr;
+    padding: 10px;
+    letter-spacing: 5px;
+    background: $dark-green;
+    color: $light-green;
+}
+
+.favorite{
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 7%;
+    top: 6%;
+    @include hide-text;
+}
+
+.goodsName{
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    p,span{
+        color: $dark-green;
+        font-size: 1.25rem;
+        padding: 14px 0;
+        border-left: 1px solid $light-green;
+    }
+    p{
+        width: 58%;
+    }
+    span{
+        width: 42%;
+        border-right: 1px solid $light-green;
+    }
+}
+
+.add_cart{
+    text-align: center;
+    background: $light-green;
+    color: $dark-green;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 16px 0;
+    text-align: center;
+
+}
+
+.add_cart:hover , .page_list a:hover{
+    color: $light-green;
+    background: $dark-green;
+}
+
+.page_change{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end; 
+    @include pad(){
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+}
+
+.page_list{
+    display: flex;
+    li{
+        width: 60px;
+        text-align: center;
+        border: 1px solid $light-green;
+    }
+    a{
+        font-size: 1.25rem;
+        color: $dark-green;
+        padding: 18px;
+    }
+}
+
+.setCenter{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}

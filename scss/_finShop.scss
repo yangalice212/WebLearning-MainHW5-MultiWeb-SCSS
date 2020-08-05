@@ -1,0 +1,39 @@
+.content_finShop{
+    margin-bottom: 60px;
+    position: relative;
+    img{
+        width: 940px;
+    }
+    .banner_content{
+        display: flex;
+        flex-direction: column;
+        // padding: 128px 0 116px 0;
+        .checkIcon{
+            position: absolute;
+            left: 40%;
+            top: 28%;
+            color: $dark-green;
+            display: flex;
+        }
+        img{
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            width: 190px;
+            height: 45px;
+        }
+        a{
+            position: absolute;
+            left: 34%;
+            top: 58%;
+            font-size: 1.5rem;
+            padding: 17px 102px;
+            background-color: $secondary;
+            color: $dark-green;
+            font-weight: bold;
+            @include moboile{
+                position: fixed;
+            }
+        }
+    }
+}

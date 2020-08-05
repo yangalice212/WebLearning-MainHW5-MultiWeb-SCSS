@@ -1,0 +1,68 @@
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+h1 a{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+    width: 300px;
+    height: 56px;
+    @include mobile(){
+        width: 116px;
+        height: 16px;
+        background: no-repeat url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg);
+    }
+}
+
+.header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    @include mobile(){
+        align-items: center;
+        padding: 0 30px 0 33px;
+    }
+    .logo{
+        width: 220px;
+        a{
+            @include hide-text;
+        }
+    }
+    &-list{
+        display: flex;
+        align-items: center;
+    }
+    .list{
+        width: 215px;
+        margin-right: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile(){
+            display: none;
+        }
+        li{
+            @include mobile(){
+                width: 100%;
+            }
+            a{
+                color: #3F5D45;
+                font-weight: bold;
+                padding: 10px;
+            }
+        }
+    }
+    .shop img{
+        padding: 10px;
+    }
+    .dehaze{
+        display: none;
+        @include mobile(){
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 79px;
+        }
+    }
+}
