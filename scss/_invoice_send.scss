@@ -1,0 +1,59 @@
+.send{
+    &-method-paper{
+            display: flex;
+            border: 1px solid $light-green;
+            margin-bottom: 30px;
+            li{
+                width: 50%;
+                &:nth-child(2){
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    padding: 14px;
+                    text-align: center;
+                    background-color: $light-green;
+                    color: $dark-green;
+                }
+                a{
+                    color: $light-green;
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    padding: 14px;
+                    text-align: center;
+                    &:hover{
+                        background-color: $light-green;
+                        color: $dark-green;
+                    }
+                }
+            }
+        }
+        &-detail-paper{
+            h3{
+                margin-bottom: 8px;
+                font-size: 1.25em;
+                font-weight: bold;
+            }
+            li{
+                &:nth-child(1){
+                    margin-bottom: 16px;
+                }
+            }
+            select{
+                width: 47%;
+                padding: 17px 20px;
+                background-color: $light-green;
+                color: #8DA291;
+                border: none;
+                margin-bottom: 8px;
+                margin-right: 8px;
+                font-family: "Microsoft JhengHei";
+            }
+            input{
+                background-color: $light-green;
+                color: #8DA291;
+                font-family: "Microsoft JhengHei";
+                padding: 17px 20px;
+                width: 100%;
+                border: none;
+            }
+        }
+}

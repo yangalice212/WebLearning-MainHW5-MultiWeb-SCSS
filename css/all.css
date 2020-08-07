@@ -163,6 +163,10 @@ h1 a {
   padding: 10px;
 }
 
+.header .list li a:hover {
+  color: #EAF0ED;
+}
+
 .header .shop img {
   padding: 10px;
 }
@@ -229,6 +233,11 @@ h1 a {
   color: #EAF0ED;
 }
 
+.menu-list {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 @media (max-width: 992px) {
   .menu-list {
     width: 100%;
@@ -279,6 +288,7 @@ h1 a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 10px;
+  overflow-x: hidden;
 }
 
 @media (max-width: 992px) {
@@ -424,52 +434,449 @@ h1 a {
   padding: 30px 0;
 }
 
-.content_finShop {
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.content_finShop img {
-  width: 940px;
-}
-
-.content_finShop .banner_content {
+.content-invoice {
+  max-width: 780px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .content-invoice {
+    margin-bottom: 0;
+  }
+}
+
+.content-invoice .send {
+  width: 58.5%;
+  height: 100%;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+@media (max-width: 767px) {
+  .content-invoice .send {
+    width: 100%;
+  }
+}
+
+.content-invoice .send .data {
+  padding: 30px 40px;
+}
+
+.content-invoice .send-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.content-invoice .send-title h2 {
+  font-size: 1.8rem;
+}
+
+.content-invoice .send-title ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-invoice .send-title ul li {
+  padding-right: 60px;
+}
+
+.content-invoice .send-title ul li:last-child {
+  padding-right: 0;
+  width: 23px;
+  height: 23px;
+  border: 5px double #3F5D45;
+  border-radius: 50%;
+  background-color: #EAF0ED;
+}
+
+.content-invoice .send-title ul hr {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 66px;
+  height: 1px;
+  border: none;
+  background-color: #EAF0ED;
+}
+
+.content-invoice .send-title ul .border {
+  left: 105px;
+}
+
+.content-invoice .send-method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EAF0ED;
+  margin-bottom: 30px;
+}
+
+.content-invoice .send-method li {
+  width: 50%;
+}
+
+.content-invoice .send-method li:nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 14px;
+  text-align: center;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.content-invoice .send-method li a {
+  color: #EAF0ED;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 14px;
+  text-align: center;
+}
+
+.content-invoice .send-method li a:hover {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.content-invoice .send-detail h3 {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.content-invoice .send-detail li:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.content-invoice .send-detail input[type="text"] {
+  background-color: #EAF0ED;
+  padding: 17px 20px;
+  width: 100%;
+  border: none;
+}
+
+.content-invoice .send .btn {
+  width: 100%;
+  border: none;
+  padding: 19px;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3F5D45;
+  background-color: #FFE180;
+  font-family: "Microsoft JhengHei";
+  cursor: pointer;
+}
+
+.content-invoice .send .btn:hover {
+  color: #FFE180;
+  background-color: #3F5D45;
+}
+
+.content-invoice .order {
+  width: 39%;
+}
+
+.content-invoice .order h3 {
+  padding: 16px 100px;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #EAF0ED;
+  color: #8DA291;
+}
+
+.content-invoice .order-detail {
+  margin-bottom: 20px;
+}
+
+.content-invoice .order ul {
+  border: 1px solid #EAF0ED;
+  padding: 16px 20px;
+}
+
+.content-invoice .order ul li {
+  color: #8DA291;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content-invoice .order ul li:nth-child(1) {
+  margin-bottom: 8px;
+}
+
+.content-invoice .order ul li:nth-child(2) {
+  margin-bottom: 16px;
+}
+
+.content-invoice .order ul .total {
+  font-size: 1.25rem;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-invoice .order-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content-invoice .order-list li p {
+  margin-bottom: 2px;
+}
+
+.content-invoice .order-list li span {
+  font-size: 1.25em;
+}
+
+.content-invoice .order-list .pro-img1 {
+  background: url(https://github.com/0404kai/work/blob/master/images/cake1.png?raw=true) no-repeat center;
+  background-size: cover;
+  width: 120px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.content-invoice .order-list .pro-img2 {
+  background: url(https://github.com/0404kai/work/blob/master/images/cake2.png?raw=true) no-repeat center;
+  background-size: cover;
+  width: 120px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.content-invoice .order-list .pro-img3 {
+  background: url(https://github.com/0404kai/work/blob/master/images/cake3.png?raw=true) no-repeat center;
+  background-size: cover;
+  width: 120px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .content-invoice .order {
+    display: none;
+  }
+}
+
+.send-method-paper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EAF0ED;
+  margin-bottom: 30px;
+}
+
+.send-method-paper li {
+  width: 50%;
+}
+
+.send-method-paper li:nth-child(2) {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 14px;
+  text-align: center;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.send-method-paper li a {
+  color: #EAF0ED;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 14px;
+  text-align: center;
+}
+
+.send-method-paper li a:hover {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+
+.send-detail-paper h3 {
+  margin-bottom: 8px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.send-detail-paper li:nth-child(1) {
+  margin-bottom: 16px;
+}
+
+.send-detail-paper select {
+  width: 47%;
+  padding: 17px 20px;
+  background-color: #EAF0ED;
+  color: #8DA291;
+  border: none;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  font-family: "Microsoft JhengHei";
+}
+
+.send-detail-paper input {
+  background-color: #EAF0ED;
+  color: #8DA291;
+  font-family: "Microsoft JhengHei";
+  padding: 17px 20px;
+  width: 100%;
+  border: none;
+}
+
+.content_finShop {
+  max-width: 940px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+  .content_finShop {
+    margin-bottom: 0;
+    position: relative;
+  }
+}
+
+.content_finShop .bg-img {
+  background: no-repeat center url(https://github.com/0404kai/work/blob/master/images/cake4.png?raw=true);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 460px;
+}
+
+.content_finShop .banner_content {
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content_finShop .banner_content .checkIcon {
-  position: absolute;
-  left: 40%;
-  top: 28%;
+  position: relative;
   color: #3F5D45;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content_finShop .banner_content .checkIcon li {
+  padding-right: 60px;
+  margin-bottom: 30px;
+}
+
+.content_finShop .banner_content .checkIcon li:last-child {
+  padding-right: 0;
+}
+
+.content_finShop .banner_content .checkIcon hr {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  width: 66px;
+  height: 1px;
+  border: none;
+  background-color: #3F5D45;
+}
+
+.content_finShop .banner_content .checkIcon .border {
+  left: 105px;
 }
 
 .content_finShop .banner_content img {
-  position: absolute;
-  left: 40%;
-  top: 40%;
   width: 190px;
-  height: 45px;
+  margin-bottom: 50px;
 }
 
-.content_finShop .banner_content a {
-  position: absolute;
-  left: 34%;
-  top: 58%;
+.content_finShop .banner_content button {
+  width: 300px;
+  border: none;
+  font-weight: bold;
   font-size: 1.5rem;
-  padding: 17px 102px;
   background-color: #FFE180;
   color: #3F5D45;
+  padding: 15px 0;
+  font-family: "Microsoft JhengHei";
+  cursor: pointer;
+}
+
+.content_finShop .banner_content button:hover {
+  background-color: #3F5D45;
+  color: #FFE180;
+}
+
+@media (max-width: 767px) {
+  .content_finShop .banner_content button {
+    display: none;
+  }
+}
+
+.content_finShop .btn {
+  width: 100%;
+  padding: 15px 0;
+  display: none;
+  border: none;
   font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Microsoft JhengHei";
+  cursor: pointer;
+  background-color: #FFE180;
+  color: #3F5D45;
+}
+
+.content_finShop .btn:hover {
+  background-color: #3F5D45;
+  color: #FFE180;
+}
+
+@media (max-width: 767px) {
+  .content_finShop .btn {
+    display: block;
+  }
 }
 
 .footer .setCenter {

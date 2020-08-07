@@ -30,6 +30,8 @@
         color: $light-green;
     }
     &-list {
+        overflow-x: hidden;
+        overflow-y: auto;
         @include pad(){
             width: 100%;
             display: flex;
@@ -64,6 +66,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    overflow-x: hidden;
     @include pad(){
         margin: 0 auto;
     }

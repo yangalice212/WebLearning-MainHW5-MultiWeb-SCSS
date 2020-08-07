@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寄送發票</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header" data-aos="fade-right">
+            <img class="dehaze"
+                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"
+                alt="">
+            <h1 class="logo">
+                <a href="index.html">sweetasteLogo</a>
+            </h1>
+            <div class="header-list">
+                <ul class="list">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="#">甜點</a></li>
+                    <li><a href="#">登入</a></li>
+                </ul>
+                <div class="shop">
+                    <a href="#"><img
+                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-invoice">
+            <div class="send">
+                <div class="data">
+                    <div class="send-title">
+                        <h2>發票</h2>
+                        <ul class="send-checkIcon">
+                            <li>
+                                <span class="material-icons">
+                                    check_circle
+                                </span>
+                                <hr>
+                            </li>
+                            <li>
+                                <span class="material-icons">
+                                    check_circle
+                                </span>
+                                <hr class="border">
+                            </li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <ul class="send-method-paper">
+                        <li><a href="invoice.html">電子發票</a></li>
+                        <li>郵寄發票</li>
+                    </ul>
+                    <ul class="send-detail-paper">
+                        <li>
+                            <h3>地址</h3>
+                            <select class="countiesInput" action="invoice.html" aria-placeholder="高雄市">
+                                <option>高雄市</option>
+                                <option>台北市</option>
+                                <option value="3">新北市</option>
+                            </select>
+                            <select class="areaInput" action="invoice.html" aria-placeholder="前鎮區">
+                                <option>前鎮區</option>
+                                <option>信義區</option>
+                                <option value="3">大安區</option>
+                            </select>
+                            <form class="addressInput" action="invoice.html">
+                                <input type="text" name="address" placeholder="幸福路520號">
+                            </form>
+                        </li>
+                        <li>
+                            <h3>統一編號（選填）</h3>
+                            <form class="taxNum" action="invoice.html">
+                                <input type="text" name="taxNum" placeholder="12345678">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <div class="check">
+                    <form action="finShop.html">
+                        <button class="btn">確認結帳</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="order">
+                <div class="order-detail">
+                    <h3>訂單摘要</h3>
+                    <ul>
+                        <li>
+                            <h4>小計</h4>
+                            <p>NT$ 2,700</p>
+                        </li>
+                        <li>
+                            <h4>運費</h4>
+                            <p>NT$ 300</p>
+                        </li>
+                        <li class="total">
+                            <h4>總計</h4>
+                            <p>NT$ 3,000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-list">
+                    <h3>購物清單</h3>
+                    <ul>
+                        <li>
+                            <span class="pro-img1"></span>
+                            <div class="product-detail">
+                                <p>焦糖馬卡龍（2）</p>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="pro-img2"></span>
+                            <div class="product-detail">
+                                <p>焦糖馬卡龍（2）</p>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="pro-img3"></span>
+                            <div class="product-detail">
+                                <p>焦糖馬卡龍（2）</p>
+                                <span>NT$ 900</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer" data-aos="fade-down">
+        <div class="setCenter">
+            <div class="footerSet">
+                <div class="footerEmail">
+                    <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logo-light.svg"
+                        alt="logo">
+                    <p>訂閱你我的甜蜜郵件</p>
+                </div>
+                <form class="emailInput" action="index.html">
+                    <span class="material-icons">
+                        email
+                    </span>
+                    <input type="text" name="mail" placeholder="mail">
+                    <button type="submit" class="btn"></button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footerbg">
+            <div class="footerContact" data-aos="fade-down">
+                <div class="contactDetail">
+                    <img class="logo"
+                        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg"
+                        alt="logo">
+                    <ul class="contactContent">
+                        <li>07-1234-5678</li>
+                        <li>sweetaste@email.com 800</li>
+                        <li>高雄市新興區幸福路 520 號</li>
+                    </ul>
+                    <ul class="contactSocial">
+                        <li><a href="#"><img
+                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-line%40.svg"
+                                    alt="line"></a></li>
+                        <li><a href="#"><img
+                                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/ic-facebook.svg"
+                                    alt="fb"></a></li>
+                    </ul>
+                </div>
+
+                <div class="footerOther">
+                    <div class="slogun">
+                        <img src="img/slogun.svg" alt="">
+                    </div>
+                    <div class="copyright">
+                        <p>© 2018 Sweetaste* All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
