@@ -61,6 +61,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,115 +78,143 @@ a {
   margin: 0 auto;
 }
 
-h1 a {
-  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+.header {
+  position: relative;
+  z-index: 1;
+}
+
+.header h1 a {
+  background: no-repeat center url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+  background-size: cover;
   width: 300px;
   height: 56px;
 }
 
 @media (max-width: 767px) {
-  h1 a {
+  .header h1 a {
     width: 116px;
     height: 16px;
-    background: no-repeat url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg);
+    background: no-repeat center url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg);
   }
 }
 
-.header {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 34px 0;
+  position: relative;
+}
+
+.header .navbar-toggler {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
-  .header {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 30px 0 33px;
+  .header .navbar-toggler {
+    display: block;
   }
 }
 
-.header .logo {
-  width: 220px;
+@media (max-width: 767px) {
+  .header .navbar-toggler:focus {
+    outline: 0;
+  }
 }
 
-.header .logo a {
+.header .navbar-brand a {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
   display: block;
 }
 
-.header-list {
+.header .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header .list {
-  width: 215px;
-  margin-right: 79px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-height: 0px;
 }
 
 @media (max-width: 767px) {
-  .header .list {
-    display: none;
+  .header .navbar-nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    overflow: hidden;
+    background: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header .navbar .active {
+  max-height: 200px;
+}
+
+.header .navbar-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar-link {
+  padding-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .header .navbar-link {
+    padding-left: 0;
+  }
+}
+
+.header .nav-link {
+  color: #3F5D45;
+  font-weight: bold;
+  padding: 0 30px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .header .nav-link {
+    padding: 10px 0;
+    text-align: center;
   }
 }
 
 @media (max-width: 767px) {
-  .header .list li {
+  .header .nav-item {
     width: 100%;
   }
 }
 
-.header .list li a {
-  color: #3F5D45;
-  font-weight: bold;
-  padding: 10px;
-}
-
-.header .list li a:hover {
-  color: #EAF0ED;
-}
-
-.header .shop img {
-  padding: 10px;
-}
-
-.header .dehaze {
-  display: none;
-}
-
 @media (max-width: 767px) {
-  .header .dehaze {
-    display: block;
-    width: 24px;
-    height: 24px;
-    margin-right: 79px;
+  .header .nav-item:hover {
+    background-color: #EAF0ED;
   }
 }
 
 .banner {
   margin-bottom: 60px;
+  position: relative;
+  z-index: 0;
 }
 
 @media (max-width: 992px) {
@@ -731,7 +760,7 @@ h1 a {
 }
 
 .send-detail-paper select {
-  width: 47%;
+  width: 46.5%;
   padding: 17px 20px;
   background-color: #EAF0ED;
   color: #8DA291;

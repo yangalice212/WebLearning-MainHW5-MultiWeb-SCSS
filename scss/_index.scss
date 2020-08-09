@@ -1,9 +1,3 @@
-.banner{
-    margin-bottom: 60px;
-    @include pad(){
-        margin-bottom: 0;
-    }
-}
 .content{
     max-width: 1024px;
     display: flex;
