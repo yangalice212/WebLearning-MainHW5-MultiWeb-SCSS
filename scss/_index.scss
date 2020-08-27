@@ -124,11 +124,11 @@
             color: $dark-green;
             font-size: 1.5rem;
             font-weight: bold;
+            &:hover{
+                color: $light-green;
+                background: $dark-green;
+            }
         }
-    }
-    .add_cart a:hover , .page_list a:hover{
-        color: $light-green;
-        background: $dark-green;
     }
 }
 
@@ -151,6 +151,10 @@
             font-size: 1.25rem;
             color: $dark-green;
             padding: 18px;
+            &:hover{
+                color: $light-green;
+                background: $dark-green;
+            }
         }
     }
 }

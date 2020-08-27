@@ -634,7 +634,7 @@ a {
   font-weight: bold;
 }
 
-.items .add_cart a:hover, .items .page_list a:hover {
+.items .add_cart a:hover {
   color: #EAF0ED;
   background: #3F5D45;
 }
@@ -674,6 +674,11 @@ a {
   font-size: 1.25rem;
   color: #3F5D45;
   padding: 18px;
+}
+
+.page_change .page_list a:hover {
+  color: #EAF0ED;
+  background: #3F5D45;
 }
 
 .setCenter {
