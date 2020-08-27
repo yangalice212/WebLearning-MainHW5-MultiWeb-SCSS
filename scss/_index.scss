@@ -59,7 +59,7 @@
     flex-wrap: wrap;
     margin-bottom: 10px;
     @include pad(){
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
     }
     @include mobile(){
@@ -101,6 +101,7 @@
     &-name{
         display: flex;
         text-align: center;    
+        align-items: center;
         h3,p{
             color: $dark-green;
             font-size: 1.25rem;
