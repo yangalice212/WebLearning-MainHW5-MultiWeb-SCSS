@@ -15,15 +15,12 @@
     }
     .banner_content{
         max-width: 300px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        text-align: center;
         .checkIcon{
             position: relative;
             color: $dark-green;
             display: flex;
-            align-items: center;
+            margin-left: 55px;
             li{
                 padding-right: 60px;
                 margin-bottom: 30px;
@@ -43,6 +40,9 @@
             .border{
                 left: 105px;
             }
+            @include mobile(){
+                margin-left: 0;
+            }
         }
         img{
             width: 190px;
@@ -56,7 +56,6 @@
             background-color: $secondary;
             color: $dark-green;
             padding: 15px 0;
-            font-family: "Microsoft JhengHei";
             cursor: pointer;
             &:hover{
                 background-color: $dark-green;
@@ -74,7 +73,6 @@
         border: none;
         font-weight: bold;
         font-size: 1.5rem;
-        font-family: "Microsoft JhengHei";
         cursor: pointer;
         background-color: $secondary;
         color: $dark-green;
@@ -83,7 +81,7 @@
             color: $secondary;
         }
         @include mobile(){
-            display: block;
+            display: initial;
         }
     }
 }

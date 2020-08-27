@@ -58,22 +58,19 @@
             display: flex;
             border: 1px solid $light-green;
             margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.25em;
             li{
                 width: 50%;
                 &:nth-child(1){
-                    font-size: 1.25rem;
-                    font-weight: bold;
                     padding: 14px;
-                    text-align: center;
                     background-color: $light-green;
                     color: $dark-green;
                 }
                 a{
                     color: $light-green;
-                    font-size: 1.25rem;
-                    font-weight: bold;
                     padding: 14px;
-                    text-align: center;
                     &:hover{
                         background-color: $light-green;
                         color: $dark-green;
@@ -82,15 +79,13 @@
             }
         }
         &-detail{
-            h3{
+            label{
                 margin-bottom: 8px;
                 font-size: 1.25em;
                 font-weight: bold;
             }
-            li{
-                &:nth-child(1){
-                    margin-bottom: 16px;
-                }
+            .dis{
+                margin-bottom: 16px;
             }
             input[type="text"]{
                 background-color: $light-green;

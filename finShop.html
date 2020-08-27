@@ -7,6 +7,9 @@
     <title>付款成功</title>
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/all.js"></script>
 </head>
@@ -78,14 +81,11 @@
                     <p>訂閱你我的甜蜜郵件</p>
                 </div>
                 <form class="emailInput" action="index.html">
-                    <span class="material-icons">
-                        email
-                    </span>
-                    <input type="text" name="mail" placeholder="mail">
+                    <label class="material-icons" for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="text" name="mail" id="email">
                     <button type="submit" class="btn"></button>
                 </form>
             </div>
-
         </div>
 
         <div class="footerbg">

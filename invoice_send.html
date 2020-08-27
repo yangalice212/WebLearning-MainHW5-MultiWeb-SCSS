@@ -7,6 +7,9 @@
     <title>寄送發票</title>
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/all.js"></script>
 </head>
@@ -59,30 +62,22 @@
                         <li><a href="invoice.html">電子發票</a></li>
                         <li>郵寄發票</li>
                     </ul>
-                    <ul class="send-detail-paper">
-                        <li>
-                            <h3>地址</h3>
-                            <select class="countiesInput" action="invoice.html" aria-placeholder="高雄市">
-                                <option>高雄市</option>
-                                <option>台北市</option>
-                                <option value="3">新北市</option>
-                            </select>
-                            <select class="areaInput" action="invoice.html" aria-placeholder="前鎮區">
-                                <option>前鎮區</option>
-                                <option>信義區</option>
-                                <option value="3">大安區</option>
-                            </select>
-                            <form class="addressInput" action="invoice.html">
-                                <input type="text" name="address" placeholder="幸福路520號">
-                            </form>
-                        </li>
-                        <li>
-                            <h3>統一編號（選填）</h3>
-                            <form class="taxNum" action="invoice.html">
-                                <input type="text" name="taxNum" placeholder="12345678">
-                            </form>
-                        </li>
-                    </ul>
+                    <div class="send-detail-paper">
+                        <label for="addr">地址</label>
+                        <select class="countiesInput" action="invoice.html" id="addr" aria-placeholder="高雄市">
+                            <option>高雄市</option>
+                            <option>台北市</option>
+                            <option value="3">新北市</option>
+                        </select>
+                        <select class="areaInput" action="invoice.html1" id="addr" aria-placeholder="前鎮區">
+                            <option>前鎮區</option>
+                            <option>信義區</option>
+                            <option value="3">大安區</option>
+                        </select>
+                        <input class="dis" type="text" name="address" id="addr" placeholder="幸福路520號">
+                        <label for="tax">統一編號（選填）</label>
+                        <input type="text" name="taxNum" id="tax" placeholder="12345678">
+                    </div>
                 </div>
                 <div class="check">
                     <form action="finShop.html">
@@ -150,14 +145,11 @@
                     <p>訂閱你我的甜蜜郵件</p>
                 </div>
                 <form class="emailInput" action="index.html">
-                    <span class="material-icons">
-                        email
-                    </span>
-                    <input type="text" name="mail" placeholder="mail">
+                    <label class="material-icons" for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="text" name="mail" id="email">
                     <button type="submit" class="btn"></button>
                 </form>
             </div>
-
         </div>
 
         <div class="footerbg">

@@ -1,0 +1,241 @@
+.container{
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    h1 a{
+        background: no-repeat center url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg);
+        background-size: cover;
+        width: 300px;
+        height: 56px;
+        @include mobile(){
+            width: 150px;
+            height: 25px;
+            background: no-repeat center url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg);
+        }
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 34px 0;
+        position: relative;
+        &-toggler{
+            display: none;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            @include mobile(){
+                display: block;
+            }
+            &:focus{
+                @include mobile(){
+                    outline: 0;
+                }
+            }
+        }
+        &-brand{
+            a{
+                @include hide-text;
+            }
+        }
+        &-nav{
+            display: flex;
+            align-items: center;
+            max-height: 0px;
+            @include mobile(){
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                transition: all 0.8s;
+                overflow: hidden;
+                background: white;
+                flex-direction: column;
+            }
+        }
+        .active {
+            max-height: 200px;
+        }
+        &-collapse{
+            display: flex;
+            align-items: center;
+        }
+        &-link{
+            padding-left: 30px;
+            @include mobile(){
+                padding-left: 0;
+            }
+        }
+    }
+
+    .nav-link {
+        color: #3F5D45;
+        font-weight: bold;
+        padding: 0 30px;
+        display: block;
+        @include mobile(){
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    
+    .nav-item {
+        @include mobile(){
+            width: 100%;
+        }
+        &:hover{
+            @include mobile(){
+                background-color: #EAF0ED;
+            }
+        }
+    }
+}
+
+.banner{
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+    @include pad(){
+        margin-bottom: 0;
+    }
+}
+
+.footer{
+    .setCenter{
+        background: $dark-green;
+        color: $light-green;
+    }
+    .footerSet{
+        width: 780px;
+        display: flex;
+        justify-content: space-between;
+        @include pad(){
+            padding: 0 30px;
+        }
+        @include mobile(){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+    }
+    .footerEmail{
+        display: flex;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+        p{
+            font-size: 1.5rem;    
+        }
+        @include mobile(){
+            justify-content: center;
+            width: auto;
+            margin-bottom: 30px;
+        }
+
+    }
+    .emailInput{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 48%;
+        img{
+            width: 24px;
+            height: 24px;
+            margin: 16px 20px;
+        }
+        .material-icons{
+            position: absolute;
+            color: $dark-green;
+            width: 24px;
+            height: 24px;
+            top: 10px;
+            left: 10px;
+        }
+        input[type="text"]{
+            width: 100%;
+            display: block;
+            border: none;
+            padding: 16px;
+            background-color: $light-green;
+            text-indent: 30px;
+        }
+        button{
+            display: block;
+            width: 64px;
+            height: 47.5px;
+            border: none;
+            cursor: pointer;
+            background: center no-repeat $secondary url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+        }
+        @include mobile(){
+            width: 84%;
+        }
+    }
+    .footerbg{
+        background-color: $light-green;
+    }
+    .footerContact{
+        padding: 30px 122px;
+        max-width: 992px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .logo{
+            margin-bottom: 115.5px;
+            @include mobile(){
+                width: 171px;
+                height: 26px;
+                margin-bottom: 40px;
+            }
+        }
+        @include mobile(){
+            flex-direction: column;
+            padding-left: 30px;
+            padding-right: 0;
+        }
+    }
+    .contactContent{
+        margin-bottom: 30px;
+        li{
+            color: $dark-green;
+        }
+    }
+    .contactSocial{
+        display: flex;
+        img{
+            margin-right: 8px;
+            width: 32px;
+            height: 32px;
+        }
+        @include mobile(){
+            margin-bottom: 23px;
+        }
+    }
+    .footerOther{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include mobile(){
+            flex-direction: row;
+            justify-content: start;
+        }
+        .slogun img{
+            margin-bottom: 40px;
+            width: 60px;
+            @include mobile(){
+                display: none;
+            }
+        }
+        .copyright{
+            color: $dark-green;
+        }
+    }   
+}

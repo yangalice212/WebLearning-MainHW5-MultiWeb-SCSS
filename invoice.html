@@ -7,6 +7,9 @@
     <title>寄送發票</title>
     <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/all.js"></script>
 </head>
@@ -32,24 +35,6 @@
                     </a>
                 </div>
             </nav>
-            <!-- <img class="dehaze"
-                src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true"
-                alt="">
-            <h1 class="logo">
-                <a href="index.html">sweetasteLogo</a>
-            </h1>
-            <div class="header-list">
-                <ul class="list">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="#">甜點</a></li>
-                    <li><a href="#">登入</a></li>
-                </ul>
-                <div class="shop">
-                    <a href="invoice.html"><img
-                            src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
-                            alt=""></a>
-                </div>
-            </div> -->
         </div>
 
         <div class="content-invoice">
@@ -77,26 +62,16 @@
                         <li>電子發票</li>
                         <li><a href="invoice_send.html">郵寄發票</a></li>
                     </ul>
-                    <ul class="send-detail">
-                        <li>
-                            <h3>電子郵件信箱</h3>
-                            <form class="emailInput" action="invoice.html">
-                                <input type="text" name="mail" placeholder="example@email.com">
-                            </form>
-                        </li>
-                        <li>
-                            <h3>統一編號（選填）</h3>
-                            <form class="tazNum"" action="invoice.html">
-                                <input type="text" name="taxNum" placeholder="12345678">
-                            </form>
-                        </li>
-                    </ul>
+                    <div class="send-detail">
+                        <label for="email">電子郵件信箱</label>
+                        <input class="dis" type="text" name="mail" id="email" placeholder="example@email.com">
+                        <label for="tax">統一編號（選填）</label>
+                        <input type="text" name="mail" id="tax" placeholder="12345678">
+                    </div>
                 </div>
-                <div class="check">
-                    <form action="finShop.html">
-                        <button class="btn">確認結帳</button>
-                    </form>
-                </div>
+                <form action="finShop.html">
+                    <button class="btn" type="submit">確認結帳</button>
+                </form>
                 
             </div>
 
@@ -158,14 +133,11 @@
                     <p>訂閱你我的甜蜜郵件</p>
                 </div>
                 <form class="emailInput" action="index.html">
-                    <span class="material-icons">
-                        email
-                    </span>
-                    <input type="text" name="mail" placeholder="mail">
+                    <label class="material-icons" for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="text" name="mail" id="email">
                     <button type="submit" class="btn"></button>
                 </form>
             </div>
-
         </div>
 
         <div class="footerbg">

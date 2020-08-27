@@ -24,8 +24,6 @@
         color: $light-green;
     }
     &-list {
-        overflow-x: hidden;
-        overflow-y: auto;
         @include pad(){
             width: 100%;
             display: flex;
@@ -60,21 +58,22 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    overflow-x: hidden;
     @include pad(){
+        width: 80%;
         margin: 0 auto;
+    }
+    @include mobile(){
+        justify-content: center;
     }
 }
 
 .items{
     margin-bottom: 20px;
     position: relative;
+    width: 300px;
     @include pad(){
-        width: 45%;
+        width: 315px;
         margin-right: 10px;
-    }
-    @include mobile(){
-        width: 100%;
     }
     img{
         @include mobile(){
@@ -85,7 +84,7 @@
 
 .tag{
     position: absolute;
-    left: 6.7%;
+    left: 20px;
     writing-mode: vertical-lr;
     padding: 10px;
     letter-spacing: 5px;
@@ -107,16 +106,16 @@
     display: flex;
     align-items: center;
     text-align: center;    
-    p,span{
+    h3,p{
         color: $dark-green;
         font-size: 1.25rem;
         padding: 14px 0;
         border-left: 1px solid $light-green;
     }
-    p{
+    h3{
         width: 58%;
     }
-    span{
+    p{
         width: 42%;
         border-right: 1px solid $light-green;
     }

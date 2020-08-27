@@ -61,7 +61,6 @@ table {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,8 +91,8 @@ a {
 
 @media (max-width: 767px) {
   .header h1 a {
-    width: 116px;
-    height: 16px;
+    width: 150px;
+    height: 25px;
     background: no-repeat center url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/4baf15e7aa2800a1e312de01435b7dbf6f654843/student-week1/logotype-lg-dark.svg);
   }
 }
@@ -105,6 +104,9 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 34px 0;
   position: relative;
 }
@@ -223,6 +225,227 @@ a {
   }
 }
 
+.footer .setCenter {
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.footer .footerSet {
+  width: 780px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+  .footer .footerSet {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footerSet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+}
+
+.footer .footerEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerEmail img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.footer .footerEmail p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .footer .footerEmail {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.footer .emailInput {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48%;
+}
+
+.footer .emailInput img {
+  width: 24px;
+  height: 24px;
+  margin: 16px 20px;
+}
+
+.footer .emailInput .material-icons {
+  position: absolute;
+  color: #3F5D45;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  left: 10px;
+}
+
+.footer .emailInput input[type="text"] {
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 16px;
+  background-color: #EAF0ED;
+  text-indent: 30px;
+}
+
+.footer .emailInput button {
+  display: block;
+  width: 64px;
+  height: 47.5px;
+  border: none;
+  cursor: pointer;
+  background: center no-repeat #FFE180 url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+}
+
+@media (max-width: 767px) {
+  .footer .emailInput {
+    width: 84%;
+  }
+}
+
+.footer .footerbg {
+  background-color: #EAF0ED;
+}
+
+.footer .footerContact {
+  padding: 30px 122px;
+  max-width: 992px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footerContact .logo {
+  margin-bottom: 115.5px;
+}
+
+@media (max-width: 767px) {
+  .footer .footerContact .logo {
+    width: 171px;
+    height: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .footerContact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}
+
+.footer .contactContent {
+  margin-bottom: 30px;
+}
+
+.footer .contactContent li {
+  color: #3F5D45;
+}
+
+.footer .contactSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .contactSocial img {
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 767px) {
+  .footer .contactSocial {
+    margin-bottom: 23px;
+  }
+}
+
+.footer .footerOther {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .footer .footerOther {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.footer .footerOther .slogun img {
+  margin-bottom: 40px;
+  width: 60px;
+}
+
+@media (max-width: 767px) {
+  .footer .footerOther .slogun img {
+    display: none;
+  }
+}
+
+.footer .footerOther .copyright {
+  color: #3F5D45;
+}
+
 .content {
   max-width: 1024px;
   display: -webkit-box;
@@ -260,11 +483,6 @@ a {
   font-weight: bold;
   background-color: #3F5D45;
   color: #EAF0ED;
-}
-
-.menu-list {
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 @media (max-width: 992px) {
@@ -317,30 +535,33 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 10px;
-  overflow-x: hidden;
 }
 
 @media (max-width: 992px) {
   .desertList {
+    width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .desertList {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .items {
   margin-bottom: 20px;
   position: relative;
+  width: 300px;
 }
 
 @media (max-width: 992px) {
   .items {
-    width: 45%;
+    width: 315px;
     margin-right: 10px;
-  }
-}
-
-@media (max-width: 767px) {
-  .items {
-    width: 100%;
   }
 }
 
@@ -352,7 +573,7 @@ a {
 
 .tag {
   position: absolute;
-  left: 6.7%;
+  left: 20px;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
@@ -385,18 +606,18 @@ a {
   text-align: center;
 }
 
-.goodsName p, .goodsName span {
+.goodsName h3, .goodsName p {
   color: #3F5D45;
   font-size: 1.25rem;
   padding: 14px 0;
   border-left: 1px solid #EAF0ED;
 }
 
-.goodsName p {
+.goodsName h3 {
   width: 58%;
 }
 
-.goodsName span {
+.goodsName p {
   width: 42%;
   border-right: 1px solid #EAF0ED;
 }
@@ -555,6 +776,9 @@ a {
   display: flex;
   border: 1px solid #EAF0ED;
   margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .content-invoice .send-method li {
@@ -562,20 +786,14 @@ a {
 }
 
 .content-invoice .send-method li:nth-child(1) {
-  font-size: 1.25rem;
-  font-weight: bold;
   padding: 14px;
-  text-align: center;
   background-color: #EAF0ED;
   color: #3F5D45;
 }
 
 .content-invoice .send-method li a {
   color: #EAF0ED;
-  font-size: 1.25rem;
-  font-weight: bold;
   padding: 14px;
-  text-align: center;
 }
 
 .content-invoice .send-method li a:hover {
@@ -583,13 +801,13 @@ a {
   color: #3F5D45;
 }
 
-.content-invoice .send-detail h3 {
+.content-invoice .send-detail label {
   margin-bottom: 8px;
   font-size: 1.25em;
   font-weight: bold;
 }
 
-.content-invoice .send-detail li:nth-child(1) {
+.content-invoice .send-detail .dis {
   margin-bottom: 16px;
 }
 
@@ -721,6 +939,9 @@ a {
   display: flex;
   border: 1px solid #EAF0ED;
   margin-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.25rem;
 }
 
 .send-method-paper li {
@@ -728,20 +949,14 @@ a {
 }
 
 .send-method-paper li:nth-child(2) {
-  font-size: 1.25rem;
-  font-weight: bold;
   padding: 14px;
-  text-align: center;
   background-color: #EAF0ED;
   color: #3F5D45;
 }
 
 .send-method-paper li a {
   color: #EAF0ED;
-  font-size: 1.25rem;
-  font-weight: bold;
   padding: 14px;
-  text-align: center;
 }
 
 .send-method-paper li a:hover {
@@ -749,34 +964,32 @@ a {
   color: #3F5D45;
 }
 
-.send-detail-paper h3 {
+.send-detail-paper label {
+  display: block;
   margin-bottom: 8px;
   font-size: 1.25em;
   font-weight: bold;
 }
 
-.send-detail-paper li:nth-child(1) {
-  margin-bottom: 16px;
+.send-detail-paper select, .send-detail-paper input {
+  background-color: #EAF0ED;
+  color: #8DA291;
+  border: none;
+  padding: 17px 20px;
 }
 
 .send-detail-paper select {
   width: 46.5%;
-  padding: 17px 20px;
-  background-color: #EAF0ED;
-  color: #8DA291;
-  border: none;
   margin-bottom: 8px;
   margin-right: 8px;
-  font-family: "Microsoft JhengHei";
 }
 
 .send-detail-paper input {
-  background-color: #EAF0ED;
-  color: #8DA291;
-  font-family: "Microsoft JhengHei";
-  padding: 17px 20px;
   width: 100%;
-  border: none;
+}
+
+.send-detail-paper .dis {
+  margin-bottom: 16px;
 }
 
 .content_finShop {
@@ -808,18 +1021,7 @@ a {
 
 .content_finShop .banner_content {
   max-width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .content_finShop .banner_content .checkIcon {
@@ -828,9 +1030,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 55px;
 }
 
 .content_finShop .banner_content .checkIcon li {
@@ -856,6 +1056,12 @@ a {
   left: 105px;
 }
 
+@media (max-width: 767px) {
+  .content_finShop .banner_content .checkIcon {
+    margin-left: 0;
+  }
+}
+
 .content_finShop .banner_content img {
   width: 190px;
   margin-bottom: 50px;
@@ -869,7 +1075,6 @@ a {
   background-color: #FFE180;
   color: #3F5D45;
   padding: 15px 0;
-  font-family: "Microsoft JhengHei";
   cursor: pointer;
 }
 
@@ -891,7 +1096,6 @@ a {
   border: none;
   font-weight: bold;
   font-size: 1.5rem;
-  font-family: "Microsoft JhengHei";
   cursor: pointer;
   background-color: #FFE180;
   color: #3F5D45;
@@ -904,225 +1108,7 @@ a {
 
 @media (max-width: 767px) {
   .content_finShop .btn {
-    display: block;
+    display: initial;
   }
-}
-
-.footer .setCenter {
-  background: #3F5D45;
-  color: #EAF0ED;
-}
-
-.footer .footerSet {
-  width: 780px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (max-width: 992px) {
-  .footer .footerSet {
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer .footerSet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0;
-  }
-}
-
-.footer .footerEmail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .footerEmail img {
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
-}
-
-.footer .footerEmail p {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 767px) {
-  .footer .footerEmail {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: auto;
-    margin-bottom: 30px;
-  }
-}
-
-.footer .emailInput {
-  background-color: #EAF0ED;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 48%;
-}
-
-.footer .emailInput img {
-  width: 24px;
-  height: 24px;
-  margin: 16px 20px;
-}
-
-.footer .emailInput span {
-  margin: 0 10px 0 20px;
-  color: #3F5D45;
-}
-
-.footer .emailInput input[type="text"] {
-  width: 100%;
-  display: block;
-  border: none;
-  padding: 16px;
-  background-color: #EAF0ED;
-}
-
-.footer .emailInput button {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  display: block;
-  width: 64px;
-  height: 56px;
-  border: none;
-  cursor: pointer;
-  background: center center no-repeat #FFE180 url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
-}
-
-@media (max-width: 767px) {
-  .footer .emailInput {
-    width: 84%;
-  }
-}
-
-.footer .footerbg {
-  background-color: #EAF0ED;
-}
-
-.footer .footerContact {
-  padding: 30px 122px;
-  max-width: 992px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.footer .footerContact .logo {
-  margin-bottom: 115.5px;
-}
-
-@media (max-width: 767px) {
-  .footer .footerContact .logo {
-    width: 171px;
-    height: 26px;
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer .footerContact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-left: 30px;
-    padding-right: 0;
-  }
-}
-
-.footer .contactContent {
-  margin-bottom: 30px;
-}
-
-.footer .contactContent li {
-  color: #3F5D45;
-}
-
-.footer .contactSocial {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer .contactSocial img {
-  margin-right: 8px;
-  width: 32px;
-  height: 32px;
-}
-
-@media (max-width: 767px) {
-  .footer .contactSocial {
-    margin-bottom: 23px;
-  }
-}
-
-.footer .footerOther {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-@media (max-width: 767px) {
-  .footer .footerOther {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-}
-
-.footer .footerOther .slogun img {
-  margin-bottom: 40px;
-  width: 60px;
-}
-
-@media (max-width: 767px) {
-  .footer .footerOther .slogun img {
-    display: none;
-  }
-}
-
-.footer .footerOther .copyright {
-  color: #3F5D45;
 }
 /*# sourceMappingURL=all.css.map */
