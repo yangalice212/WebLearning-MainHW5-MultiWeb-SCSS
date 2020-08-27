@@ -571,7 +571,7 @@ a {
   }
 }
 
-.tag {
+.items .tag {
   position: absolute;
   left: 20px;
   -webkit-writing-mode: vertical-lr;
@@ -583,7 +583,7 @@ a {
   color: #EAF0ED;
 }
 
-.favorite {
+.items .favorite {
   background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
   width: 20px;
   height: 20px;
@@ -596,43 +596,42 @@ a {
   display: block;
 }
 
-.goodsName {
+.items-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 
-.goodsName h3, .goodsName p {
+.items-name h3, .items-name p {
   color: #3F5D45;
   font-size: 1.25rem;
   padding: 14px 0;
   border-left: 1px solid #EAF0ED;
 }
 
-.goodsName h3 {
+.items-name h3 {
   width: 58%;
 }
 
-.goodsName p {
+.items-name p {
   width: 42%;
   border-right: 1px solid #EAF0ED;
 }
 
-.add_cart {
+.items .add_cart {
   text-align: center;
   background: #EAF0ED;
+}
+
+.items .add_cart a {
+  padding: 16px 0;
   color: #3F5D45;
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 16px 0;
-  text-align: center;
 }
 
-.add_cart:hover, .page_list a:hover {
+.items .add_cart a:hover, .items .page_list a:hover {
   color: #EAF0ED;
   background: #3F5D45;
 }
@@ -656,19 +655,19 @@ a {
   }
 }
 
-.page_list {
+.page_change .page_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.page_list li {
+.page_change .page_list li {
   width: 60px;
   text-align: center;
   border: 1px solid #EAF0ED;
 }
 
-.page_list a {
+.page_change .page_list a {
   font-size: 1.25rem;
   color: #3F5D45;
   padding: 18px;

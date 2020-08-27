@@ -80,61 +80,55 @@
             width: 100%;
         }
     }
-}
-
-.tag{
-    position: absolute;
-    left: 20px;
-    writing-mode: vertical-lr;
-    padding: 10px;
-    letter-spacing: 5px;
-    background: $dark-green;
-    color: $light-green;
-}
-
-.favorite{
-    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 7%;
-    top: 6%;
-    @include hide-text;
-}
-
-.goodsName{
-    display: flex;
-    align-items: center;
-    text-align: center;    
-    h3,p{
-        color: $dark-green;
-        font-size: 1.25rem;
-        padding: 14px 0;
-        border-left: 1px solid $light-green;
+    .tag{
+        position: absolute;
+        left: 20px;
+        writing-mode: vertical-lr;
+        padding: 10px;
+        letter-spacing: 5px;
+        background: $dark-green;
+        color: $light-green;
     }
-    h3{
-        width: 58%;
+    .favorite{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 7%;
+        top: 6%;
+        @include hide-text;
     }
-    p{
-        width: 42%;
-        border-right: 1px solid $light-green;
+    &-name{
+        display: flex;
+        text-align: center;    
+        h3,p{
+            color: $dark-green;
+            font-size: 1.25rem;
+            padding: 14px 0;
+            border-left: 1px solid $light-green;
+        }
+        h3{
+            width: 58%;
+        }
+        p{
+            width: 42%;
+            border-right: 1px solid $light-green;
+        }
     }
-}
-
-.add_cart{
-    text-align: center;
-    background: $light-green;
-    color: $dark-green;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 16px 0;
-    text-align: center;
-
-}
-
-.add_cart:hover , .page_list a:hover{
-    color: $light-green;
-    background: $dark-green;
+    .add_cart{
+        text-align: center;
+        background: $light-green;
+        a{
+            padding: 16px 0;
+            color: $dark-green;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+    .add_cart a:hover , .page_list a:hover{
+        color: $light-green;
+        background: $dark-green;
+    }
 }
 
 .page_change{
@@ -145,19 +139,18 @@
         margin-bottom: 30px;
         justify-content: center;
     }
-}
-
-.page_list{
-    display: flex;
-    li{
-        width: 60px;
-        text-align: center;
-        border: 1px solid $light-green;
-    }
-    a{
-        font-size: 1.25rem;
-        color: $dark-green;
-        padding: 18px;
+    .page_list{
+        display: flex;
+        li{
+            width: 60px;
+            text-align: center;
+            border: 1px solid $light-green;
+        }
+        a{
+            font-size: 1.25rem;
+            color: $dark-green;
+            padding: 18px;
+        }
     }
 }
 
